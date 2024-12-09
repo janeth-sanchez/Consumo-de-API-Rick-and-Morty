@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="card" *ngFor="let episode of episodes">
+      <div class="card-body">
+        <h3 class="card-title">{{ episode.name }}</h3>
+        <p class="card-text"><strong>Fecha de Emisión:</strong> {{ episode.air_date }}</p>
+        <p class="card-text"><strong>Código del Episodio:</strong> {{ episode.episode }}</p>
+        <p class="card-text"><strong>Creado:</strong> {{ episode.created | date }}</p>
+        <a [href]="episode.url" class="card-link" target="_blank">URL del Episodio</a>
+      </div>
+    </div>
+  </div>
+  

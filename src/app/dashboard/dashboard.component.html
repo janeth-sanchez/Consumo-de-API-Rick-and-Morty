@@ -1,0 +1,28 @@
+<head>
+  <meta charset="UTD-8">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'/>
+</head>
+<body>
+  <input type="checkbox" id="check">
+  <label for="check">
+      <i class="bx bx-menu" id="btn"></i>
+      <i class="bx bx-x-circle" id="cancel"></i>
+  </label>
+  <div class="sidebar">
+      <header>Proyecto</header>
+      <ul>
+          <li><a (click)="goToDashboard()"><i class="bx bx-home"></i> Dashboard</a></li>
+          <li><a (click)="goToCharacters()"><i class="bx bx-body"></i> Personajes</a></li>
+          <li><a (click)="goToEpisodes()"><i class="bx bx-tv"></i> Episodios</a></li>
+          <li><a href="#Login"><i class="bx bx-log-out"></i>Logout</a></li>
+      </ul>
+  </div>
+  <section>
+      <div class="welcome">
+          <h1>Bienvenido al Proyecto Final de Angular</h1>
+          <p>Elaboró: Mirna Janeth Sánchez Perales</p>
+      </div>
+  </section>
+</body>
+

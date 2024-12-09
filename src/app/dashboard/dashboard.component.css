@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .sidebar {
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #012606; 
+    transition: all .5s ease;
+  }
+  
+  .sidebar header {
+    font-size: 22px;
+    color: white;
+    line-height: 70px;
+    text-align: center;
+    background: #012606;
+    user-select: none;
+  }
+  
+  .sidebar ul a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-bottom: 1px solid black;
+    border-top: 1px solid rgba(255,255,255,.1);
+    transition: .4s;
+  }
+  
+  ul li:hover a {
+    padding-left: 50px;
+  }
+  
+  .sidebar ul a i {
+    margin-right: 16px;
+  }
+
+  .sidebar ul a[href="#Dashboard"],
+  .sidebar ul a[href="#Personajes"],
+  .sidebar ul a[href="#Capítulos"],
+  .sidebar ul a[href="#Login"] {
+    background-color: #47AF4A;
+    color: white; 
+  }
+  
+  #check {
+    display: none;
+  }
+  
+  label #btn, label #cancel {
+    position: absolute;
+    background: #012606; 
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  label #btn {
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    color: white;
+    padding: 6px 12px;
+    transition: all .5s;
+  }
+  
+  label #cancel {
+    z-index: 1111;
+    left: -195px;
+    top: 17px;
+    font-size: 15px;
+    color: #47AF4A; 
+    padding: 4px 9px;
+    transition: all .5s ease;
+  }
+  
+  #check:checked ~ .sidebar {
+    left: 0;
+  }
+  
+  #check:checked ~ label #btn {
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  #check:checked ~ label #cancel {
+    left: 195px;
+  }
+  
+  #check:checked ~ section {
+    margin-left: 250px;
+  }
+  
+  section {
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    transition: all .5s;
+    
+  }
+  
+  section .welcome {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+  }
+  
+  section .welcome h1 {
+    font-size: 36px;
+    color: #042331; 
+    margin-bottom: 10px; 
+  }
+  
+  section .welcome p {
+    font-size: 18px;
+    color: #042331; 
+  }
